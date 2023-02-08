@@ -7,9 +7,10 @@ import path from 'path'
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+    alias: [{
+      find: '@',
+      replacement: path.resolve('./src'),
+    }],
   },
 
 })

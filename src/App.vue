@@ -1,11 +1,12 @@
 <script setup lang="ts">
 // import {} from '../node_modules/bootstrap/dist/css/bootstrap.css' // not work
-// import HelloWorld from './components/HelloWorld.vue'
-import Card from './components/Card.vue'
+import HelloWorld from './components/HelloWorld.vue'
+import NoteCard from '@/components/NoteCard.vue'
+import { msg } from '@/App'
 </script>
 
 <template>
-  <Card msg="msg"></Card>
+  <NoteCard :msg="msg" show="both" />
 </template>
 
 <style scoped>
