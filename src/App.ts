@@ -1,9 +1,18 @@
-import type INoteType from '@components/NoteCard'
+import {INoteType as INoteType} from '@/components/NoteCard'
 
-var msg:INoteType = {
+var msg:any = {
     ancestor: {
         text: "ancestor",
     },
+    children: [
+        {
+            children: [{text: '3'}],
+            text: "1"
+        },
+        {
+            text: "2"
+        }
+    ],
     text: "main",
 }
 
